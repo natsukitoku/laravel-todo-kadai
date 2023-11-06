@@ -29,4 +29,4 @@ Route::resource('goals', GoalController::class)->only(['index', 'store', 'update
 
 Route::resource('goals.todos', TodoController::class)->only(['store', 'update', 'destroy'])->middleware('auth');
 
-Route::resource('tags', TagController::class)->only(['store', 'update', 'destroy'])->middleware('a uth');
+Route::resource('tags', TagController::class)->only(['store', 'update', 'destroy'])->middleware('auth');
